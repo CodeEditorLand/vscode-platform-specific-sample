@@ -1,7 +1,15 @@
 {
-  "activationEvents": [
-    "onCommand:vscode-platform-specific-sample.run"
-  ],
+  "name": "vscode-platform-specific-sample",
+  "displayName": "Platform Specific Sample",
+  "version": "1.15.0",
+  "description": "VS Code platform specific extension sample",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode-platform-specific-sample"
+  },
+  "publisher": "joaomoreno",
+  "main": "./extension.js",
+  "scripts": {},
   "contributes": {
     "commands": [
       {
@@ -10,21 +18,13 @@
       }
     ]
   },
+  "activationEvents": [
+    "onCommand:vscode-platform-specific-sample.run"
+  ],
   "dependencies": {
     "vscode-ripgrep": "1.12.0"
   },
-  "description": "VS Code platform specific extension sample",
   "devDependencies": {
     "@types/vscode": "1.58.0"
-  },
-  "displayName": "Platform Specific Sample",
-  "main": "./extension.js",
-  "name": "vscode-platform-specific-sample",
-  "publisher": "joaomoreno",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/vscode-platform-specific-sample"
-  },
-  "scripts": {},
-  "version": "1.15.0"
+  }
 }
