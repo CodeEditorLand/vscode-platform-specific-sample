@@ -1,23 +1,28 @@
 {
 	"name": "vscode-platform-specific-sample",
 	"displayName": "Platform Specific Sample",
+	"version": "0.0.1",
+	"private": false,
 	"description": "VS Code platform specific extension sample",
-	"publisher": "joaomoreno",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/microsoft/vscode-platform-specific-sample"
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
 	},
-	"version": "1.15.0",
-	"engines": {
-		"vscode": "1.61.0"
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
 	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:vscode-platform-specific-sample.run"
-	],
+	"type": "module",
 	"main": "./extension.js",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
 	"contributes": {
 		"commands": [
 			{
@@ -26,13 +31,17 @@
 			}
 		]
 	},
-	"scripts": {
-		"lint": "eslint ."
-	},
-	"devDependencies": {
-		"@types/vscode": "1.87.0"
-	},
+	"activationEvents": [
+		"onCommand:vscode-platform-specific-sample.run"
+	],
 	"dependencies": {
 		"vscode-ripgrep": "1.12.0"
+	},
+	"devDependencies": {
+		"@types/vscode": "1.87.0",
+		"typescript-esbuild": "latest"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
