@@ -1,28 +1,7 @@
 {
-	"name": "vscode-platform-specific-sample",
-	"displayName": "Platform Specific Sample",
-	"version": "0.0.1",
-	"private": false,
-	"description": "VS Code platform specific extension sample",
-	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
-	"bugs": {
-		"url": "https://github.com/CodeEditorLand/Foundation/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Playform",
-		"email": "Hello@Playform.Cloud",
-		"url": "https://playform.cloud"
-	},
-	"type": "module",
-	"main": "./extension.js",
-	"scripts": {
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
-	},
+	"activationEvents": [
+		"onCommand:vscode-platform-specific-sample.run"
+	],
 	"contributes": {
 		"commands": [
 			{
@@ -31,17 +10,19 @@
 			}
 		]
 	},
-	"activationEvents": [
-		"onCommand:vscode-platform-specific-sample.run"
-	],
 	"dependencies": {
 		"vscode-ripgrep": "1.12.0"
 	},
+	"description": "VS Code platform specific extension sample",
 	"devDependencies": {
 		"@types/vscode": "1.87.0",
 		"typescript-esbuild": "0.4.5"
 	},
-	"publishConfig": {
-		"access": "public"
-	}
+	"displayName": "Platform Specific Sample",
+	"main": "./extension.js",
+	"name": "vscode-platform-specific-sample",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
+	"type": "module"
 }
