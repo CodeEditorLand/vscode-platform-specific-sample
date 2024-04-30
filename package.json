@@ -1,23 +1,32 @@
 {
 	"name": "vscode-platform-specific-sample",
 	"displayName": "Platform Specific Sample",
+	"version": "0.0.1",
+	"private": false,
 	"description": "VS Code platform specific extension sample",
-	"publisher": "joaomoreno",
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandPlatformSpecificSample#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandPlatformSpecificSample/issues"
+	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/microsoft/vscode-platform-specific-sample"
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandPlatformSpecificSample.git"
 	},
-	"version": "1.15.0",
-	"engines": {
-		"vscode": "^1.61.0"
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
 	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:vscode-platform-specific-sample.run"
-	],
+	"type": "module",
 	"main": "./extension.js",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
 	"contributes": {
 		"commands": [
 			{
@@ -26,13 +35,15 @@
 			}
 		]
 	},
-	"scripts": {
-		"lint": "eslint ."
-	},
+	"activationEvents": [
+		"onCommand:vscode-platform-specific-sample.run"
+	],
+	"dependencies": {},
 	"devDependencies": {
-		"@types/vscode": "^1.58.0"
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6"
 	},
-	"dependencies": {
-		"vscode-ripgrep": "^1.12.0"
+	"publishConfig": {
+		"access": "public"
 	}
 }
