@@ -1,7 +1,9 @@
 {
-	"activationEvents": [
-		"onCommand:vscode-platform-specific-sample.run"
-	],
+	"name": "@codeeditorland/platform-specific-sample",
+	"displayName": "Platform Specific Sample",
+	"description": "VS Code platform specific extension sample",
+	"main": "./extension.js",
+	"scripts": {},
 	"contributes": {
 		"commands": [
 			{
@@ -10,11 +12,9 @@
 			}
 		]
 	},
+	"activationEvents": [
+		"onCommand:vscode-platform-specific-sample.run"
+	],
 	"dependencies": {},
-	"description": "VS Code platform specific extension sample",
-	"devDependencies": {},
-	"displayName": "Platform Specific Sample",
-	"main": "./extension.js",
-	"name": "@codeeditorland/platform-specific-sample",
-	"scripts": {}
+	"devDependencies": {}
 }
