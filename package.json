@@ -15,6 +15,6 @@
 	"devDependencies": {},
 	"displayName": "Platform Specific Sample",
 	"main": "./extension.js",
-	"name": "vscode-platform-specific-sample",
+	"name": "@codeeditorland/platform-specific-sample",
 	"scripts": {}
 }
